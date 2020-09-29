@@ -1,0 +1,1 @@
+默认不会打印INFO，需要指定-alsologtostderr参数
