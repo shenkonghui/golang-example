@@ -5,3 +5,4 @@
 - [glog](log/main.go):   glog使用
 - [pprof-demo](pprof-demo/main.go):   golang 性能工具 pprof
 - [reflection](reflection/main.go):   反射
+- [go-orm](go-orm/main.go):   ORM框架
