@@ -1,19 +1,23 @@
 package main
 
-func toHeap() *int {
-	var x int
-	return &x
+import (
+	"fmt"
+	"time"
+)
+
+type A struct {
+	b *B
+}
+type B struct {
+	c C
 }
 
-func toStack() int {
-	x := new(int)
-	*x = 1
-	return *x
+type C struct {
+	v int
 }
 
-/**
- *
- */
 func main() {
-	var a string
+	a := A{}
+	fmt.Println(a.b.c.v)
+	time.Sleep(time.Second * 10)
 }

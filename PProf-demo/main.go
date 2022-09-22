@@ -22,7 +22,7 @@ func main() {
 		go func() {
 			for {
 				log.Println(Add("https://github.com/EDDYCJY"))
-				time.Sleep(time.Millisecond * 10)
+				time.Sleep(time.Millisecond * 100)
 			}
 		}()
 		runtime.GOMAXPROCS(1)               // 限制 CPU 使用数，避免过载
